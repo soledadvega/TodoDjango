@@ -32,12 +32,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'polls.apps.PollsConfig',
+    'django.contrib.admin', #sitio administ
+    'django.contrib.auth', #sistema de autentif
+    'django.contrib.contenttypes', #framework para los tipos de contenidos
+    'django.contrib.sessions', #framework de sesion
+    'django.contrib.messages', #frameworks de mensajes
+    'django.contrib.staticfiles', #frameworks para gestion de arch estaticos
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',  #respaldo
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), #nombre de la BD
     }
 }
 

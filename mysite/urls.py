@@ -19,6 +19,6 @@ from django.contrib import admin
 from django.urls import include, path  #agregue include
 
 urlpatterns = [
-    path('polls/', include('ṕolls.urls')), #agregue esta linea
+    path('polls/', include('polls.urls')), #agregue esta linea
     path('admin/', admin.site.urls),
 ]
